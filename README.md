@@ -9,11 +9,11 @@ Um jogo simples e divertido onde o usuário tenta adivinhar um número secreto g
 - Histórico de palpites exibido dinamicamente com setas indicando se o próximo número é **maior** ou **menor**.
 - Mensagens de feedback:
   - Azul → Palpite maior ou menor.
-  - Verde → Acertou! ("Congratulations!!!")
+  - Verde → Acertou! 
   - Vermelho → Perdeu e revela o número correto.
 - Limite de **10 tentativas**.
 - Bloqueio automático do campo de entrada ao vencer ou perder.
-- Botão **"NEW GAME"** para reiniciar rapidamente.
+- Botão **"NOVO JOGO"** para reiniciar rapidamente.
 
 ---
 
@@ -21,8 +21,8 @@ Um jogo simples e divertido onde o usuário tenta adivinhar um número secreto g
 1. O computador gera um número secreto.
 2. O jogador envia um palpite.
 3. O programa compara o palpite com o número secreto:
-   - Se for **maior**, exibe "Your number is too high".
-   - Se for **menor**, exibe "Your number is too low".
+   - Se for **maior**, exibe mensagem avisando que o palpite foi maior.
+   - Se for **menor**, exibe mensagem avisando que o palpite foi menor.
    - Se for **igual**, exibe a mensagem de vitória.
 4. A cada tentativa, o contador aumenta.
 5. Se atingir o limite de 10 tentativas, o jogador perde.
