@@ -55,11 +55,8 @@ Opcionalmente, você pode subir para o **GitHub Pages** e ter o jogo online.
 ---
 
 ## 📸 Demonstração
-Adicione aqui uma captura de tela do jogo caso queira:
-```
-![Screenshot](screenshot.jpg)
 
-```
+![Screenshot](screenshot.jpg)
 
 ---
 
