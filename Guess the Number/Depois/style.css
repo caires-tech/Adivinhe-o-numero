@@ -1,0 +1,99 @@
+:root {
+    --green: #5ed68a;          /* Variável CSS para a cor verde */
+    --red: #1ea6c8;            /* Variável CSS para a cor vermelha/azulada */
+    --background: #fafafa;     /* Cor de fundo principal */
+    --gradient-1: #343e63;     /* Primeira cor do degradê */
+    --gradient-2: #2a3352;     /* Segunda cor do degradê */
+}
+  
+html {
+    font-size: 12px;           /* Define o tamanho base da fonte para toda a página */
+    font-weight: 300;          /* Define peso de fonte mais leve */
+}
+  
+body {
+    width: 90vw;               /* Largura do body ocupando 90% da largura da tela */
+    margin: 0 auto;            /* Centraliza horizontalmente o conteúdo */
+    background: radial-gradient(var(--gradient1), var(--gradient2));
+                                /* Degradê radial usando as cores definidas no :root */
+    padding: 4rem;             /* Espaçamento interno da página */
+}
+  
+main {
+    text-align: center;        /* Centraliza todo o conteúdo dentro do main */
+    background: var(--background); /* Define o fundo branco do painel do jogo */
+    border: solid var(--red);  /* Borda utilizando a cor vermelha */
+    border-width: 8px 8px 8px 8px; /* Largura da borda em todos os lados */
+    min-height: 40vh;          /* Altura mínima de 40% da altura da tela */
+    border-radius: 2rem 2rem 2rem 2rem; /* Cantos arredondados */
+    padding: 4rem;             /* Espaçamento interno */
+    color: #1f2933;            /* Cor dos textos dentro do main */
+}
+  
+h2 {
+    font-size: 3.2rem;         /* Tamanho grande para o título */
+    margin: 2rem 2rem 2rem 2rem; /* Margens ao redor do h2 */
+}
+  
+p {
+    font-size: 1.8rem;         /* Tamanho dos textos dentro de <p> */
+}
+
+.button-wrapper {
+    display: flex;             /* Layout flexível */
+    flex-direction: column;    /* Coloca os botões em coluna */
+}
+  
+button {
+    border: none;              /* Remove bordas padrão do botão */
+    cursor: pointer;           /* Mostra cursor de "mãozinha" ao passar o mouse */
+    background: var(--green);  /* Cor de fundo do botão (verde) */
+    padding: 2rem 6rem;        /* Espaçamento interno (vertical e horizontal) */
+    border-radius: 1rem 1rem 0 0; /* Arredonda a parte superior do botão */
+    font-size: 1.4rem;         /* Tamanho da fonte */
+}
+  
+button:last-child {
+    background: var(--red);    /* Último botão da lista fica vermelho */
+    border-radius: 0 0 1rem 1rem; /* Arredonda apenas a parte inferior */
+}
+
+/* game screen */
+  
+h3 {
+    font-size: 2rem;           /* Tamanho do título secundário */
+}
+  
+input {
+    border: 2px solid lightgray; /* Borda cinza clara */
+    background: transparent;     /* Fundo transparente */
+    margin: 2rem 0;              /* Margem vertical */
+    padding: 1rem 0;             /* Espaçamento interno vertical */
+    width: 25rem;                /* Largura fixa do campo de input */
+    text-align: center;          /* Texto centralizado dentro do input */
+    font-size: 2rem;             /* Tamanho grande de fonte para facilitar leitura */
+}
+
+.stats {
+    text-align: left;            /* As estatísticas ficam alinhadas à esquerda */
+}
+  
+.info {
+    display: flex;               /* Usa flexbox para alinhar os elementos */
+    justify-content: space-between; /* Deixa os itens nas extremidades do espaço */
+    align-items: center;         /* Alinha verticalmente no centro */
+}
+  
+.info span {
+    font-size: 1.6rem;           /* Tamanho de fonte dos valores exibidos */
+}
+
+#newGameButton {
+    border-radius: 0;            /* Remove completamente o arredondamento desse botão */
+}
+  
+@media (min-width: 800px) {      /* Regras aplicadas quando a tela tem 800px ou mais */
+    body {
+      width: 60vw;               /* Aumenta o body para 60% da largura da tela */
+    }
+}
